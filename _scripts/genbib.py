@@ -34,10 +34,13 @@ pub_mkdwn_template = Template(
     pdf: $PDF
     supplement: $SUPPLEMENT
 
+    pmcid: $PMCID
     biorxiv: $BIORXIV
     arxiv: $ARXIV
     chemrxiv: $CHEMRXIV
 
+    website: $WEBSITE
+    
     github: $GITHUB
     zenodo: $ZENODO
     
@@ -137,6 +140,7 @@ def process_bib():
                 "BIORXIV": preprints["biorxiv"],
                 "ARXIV": preprints["arxiv"],
                 "CHEMRXIV": preprints["chemrxiv"],
+                "PMCID": preprints["pmcid"],
                 "DATE": entry["date"],
                 "ABSTRACT": entry["abstract"],
                 "GITHUB": "",
@@ -259,6 +263,7 @@ def process_bib():
                 "BIORXIV": preprints["biorxiv"],
                 "ARXIV": preprints["arxiv"],
                 "CHEMRXIV": preprints["chemrxiv"],
+                "PMCID": preprints["pmcid"],
                 "DATE": entry["date"],
                 "ABSTRACT": entry["abstract"],
                 "GITHUB": "",
